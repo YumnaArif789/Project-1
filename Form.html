@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+</head>
+<style>
+    .form span{
+        font-style: italic;
+        font-weight: 100;
+        color: orange;
+        background-color: black;
+    }
+    h1 span{
+        background-color: cadetblue;
+    }
+    body{
+        background-image: url(data:image/jpeg;base64,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); background-repeat: no-repeat; background-size: cover;
+    }
+</style>
+
+<body>
+    <button>
+        <a href="Index.html">Home</a>
+    </button>
+    <button>
+        <a href="List.html">List</a>
+    </button>
+    <button>
+        <a href="Table.html">Table</a>
+    </button>
+    <br>
+    <h1 class="form"> <span>Form </span></h1>
+    <form action="">
+        <h1> <span>STUDENT REGISTRATION FORM: </span></h1>
+        <DIV>
+            <Label for="Name:">Name:</Label>
+            <INput type="text" id="Name:" placeholder="Please enter full name"></INput>
+        </DIV>
+        <Div>
+            <br>
+            <Label for="Father's Name:">Father's Name:</Label>
+            <Input type="text" id="Father's Name:"></Input>
+        </Div>
+        <br>
+        <div>
+            <label for="Mother's Name:">Mother's Name:</label>
+            <input type="text" id="Mother's Name:">
+        </div>
+        <br>
+        <div>
+            <label for="Phone Number:">Phone Number:</label>
+            <input type="text" id="Phone Number:" placeholder="03XXXXXXXXX">
+        </div>
+        <br>
+        <div>
+            <label for="Age:">Age:</label>
+            <input type="text" id="Age:" placeholder="Enter your age">
+        </div>
+        <br>
+        <div>
+            <label for="Date of Birth:">Date of Birth:</label>
+            <input type="date" id="Date of Birth:">
+        </div>
+        <br>
+        <div>
+            <label for="Gender:">Gender:</label>
+            <input type="radio" name="Gender" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender">
+            <label for="Female">Female</label>
+        </div>
+        <br>
+        <div>
+            <label for="Email:">Email:</label>
+            <input type="text" id="Email" placeholder="Enter your Email">
+        </div>
+        <br>
+        <div>
+            <label for="Address:">Address:</label>
+            <div>
+                <textarea name="Address" id="" cols="50" rows="4"></textarea>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="Blood Group:">Blood Group:</label>
+            <select name="" id="">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O+">O+</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Department:">Department:</label>
+            <input type="radio" name="Department" id="BBA">
+            <label for="BBA">BBA</label>
+            <input type="radio" id="CSE" name="Department">
+            <label for="CSE">CSE</label>
+            <input type="radio" name="Department" id="EEE">
+            <label for="EEE">EEE</label>
+        </div>
+        <br>
+        <div>
+            <label for="Course:">Course:</label>
+            <input type="checkbox" id="Web development">
+            <label for="Web development">Web development</label>
+            <input type="checkbox" id="Graphics">
+            <label for="Graphics">Graphics</label>
+            <input type="checkbox" id="Machine learning">
+            <label for="Machine learning">Machine learning</label>
+            <input type="checkbox" id="Robotics">
+            <label for="Robotics">Robotics</label>
+        </div>
+        <br>
+        What are your Hobbies?
+        <div>
+            <input type="checkbox" id="Music">
+            <label for="Music">Music</label>
+            <input type="checkbox" id="Movies">
+            <label for="Movies">Movies</label>
+            <input type="checkbox" id="Travel">
+            <label for="Travel">Travel</label>
+            <input type="checkbox" id="Sports">
+            <label for="Sports">Sports</label>
+        </div>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
